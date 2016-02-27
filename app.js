@@ -34,7 +34,7 @@ users.route('/users/')
 	.post(UsersCtrl.addUsers);
 
 users.route('/users/:user')
-	.get(UsersCtrl.findByName)
+	.get(UsersCtrl.findByUserId)
 	.put(UsersCtrl.updateUsers)
 	.delete(UsersCtrl.deleteUsers);
 

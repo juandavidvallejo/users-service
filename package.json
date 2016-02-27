@@ -1,5 +1,5 @@
 {
- "name": "pets-service",
+ "name": "users-service",
  "version": "1.0.0",
  "dependencies": {
 	 "mongoose": "~3.6.11",

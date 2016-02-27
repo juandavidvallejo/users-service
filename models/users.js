@@ -8,6 +8,7 @@ exports = module.exports = function(app, mongoose) {
     city:          { type: String },
     neighborhood:  { type: String },
     birthdate:     { type: Date },
+    email:         { type: String, set: toLower }
   });
 
   mongoose.model('Users', userSchema);

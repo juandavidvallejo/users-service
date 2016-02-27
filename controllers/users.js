@@ -13,7 +13,7 @@ exports.findAllUserss = function(req, res) {
 };
 
 //GET - Return a user with specified ID
-exports.findByName = function (req, res) {
+exports.findByUserId = function (req, res) {
     Users.findOne({
         user: req.params.user
     }, function (error, response) {
