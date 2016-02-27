@@ -43,7 +43,8 @@ exports.addUsers = function(req, res) {
         address:        req.body.address,
         city:           req.body.city,
         neighborhood:   req.body.neighborhood,
-        birthdate:      req.body.birthdate
+        birthdate:      req.body.birthdate,
+        email:           req.body.email
     });
 
     user.save(function(err, user) {
@@ -62,6 +63,7 @@ exports.updateUsers = function(req, res) {
         user.city = req.body.city;
         user.neighborhood = req.body.neighborhood;
         user.birthdate = req.body.birthdate;
+        user.email = req.body.email;
 
         user.save(function(err) {
             if(err) return res.status(500).send(err.message);
